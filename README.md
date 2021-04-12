@@ -1,4 +1,4 @@
-<h1 align="center">Игра «Виселица»</h1>
+<h1 align="center">Игра «Крестики-нолики»</h1>
 <br>
 <p align="center">
 <img height='400' src='http://vladkoleda.ru/img/git/git__tic-tac-toe.jpg'>
