@@ -1,0 +1,199 @@
+/* #region general */
+
+body {
+    position: relative;
+    background: #9033e1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 100px 0;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+.tic-tac {
+    position: relative;
+}
+
+.cell-container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.boxes, .game-mode {
+    width: 700px;
+}
+
+.box {
+
+    width: 200px;
+    height: 200px;
+    margin: 0px 5px 5px 0px;
+    border: 0px solid #691aae;
+    float: left;
+    border-radius: 10px;
+    font-size: 80px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    line-height: 200px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    background: #b476eb;
+    position: relative;
+    z-index: 1;
+    animation-iteration-count: infinite;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+
+.box:active {
+    transform: scale(0.8);
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    width: 400px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 26px;
+}
+
+#info-player-name {
+    font-weight: 600;
+    font-size: 30px;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.first-player {
+    position: relative;
+    transition: all 0.3s ease;
+    background: #e19033;
+    /* opacity: 0.4; */
+    z-index: 1;
+}
+
+.first-player:after {
+    position: absolute;
+    content: 'X';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.second-player {
+    position: relative;
+    transition: all 0.3s ease;
+    background: #33e190;
+    /* opacity: 0.4; */
+    z-index: 1;
+}
+
+.second-player:after {
+    position: absolute;
+    content: 'O';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+@keyframes win-animation {
+    0% {
+        /* transform: translateX(10px); */
+        transform: scale(1.02);
+    }
+    50% {
+        /* transform: translateX(-10px); */
+        transform: scale(1);
+    }
+    100% {
+        /* transform: translateX(0px); */
+        transform: scale(1.02);
+    }
+}
+
+
+.winner__body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: #691aae00;
+    z-index: 98;
+    text-align: center;
+    display: none;
+}
+
+.info__winner {
+    padding: 40px;
+    color: white;
+    font-size: 30px;
+    background: #691aaee0;
+    border-radius: 20px;
+    z-index: 99;
+}
+
+.info__winner span {
+    display: inline-block;
+    margin: 20px 0px 0px 0px;
+    font-weight: 600;
+    font-size: 50px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.info__settings {}
+
+.settings {
+    display: flex;
+}
+
+.info__settings-text {
+    margin-left: 10px;
+}
+
+#btn-choose-enemy, #pointsClear {
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    background: #691aae;
+    color: white;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.game-mode {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    top: 50px;
+    left: 740px;
+}
+
+.info__points {
+    margin: 50px 0px;
+    line-height: 140%;
+}
+
+.info__points span {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 30px;
+    border-radius: 5px;
+}

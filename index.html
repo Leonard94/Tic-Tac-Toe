@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Tic-Tac Game</title>
+</head>
+
+<body>
+
+    <div class="tic-tac">
+        <div class="wrapper">
+
+            <div class="game__field">
+                <div class="game-mode"></div>
+                <div class="boxes" id="boxes">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="informations">
+                <div class="info__player">
+                    <span id="info-player"></span><span id="info-player-name"></span>
+                </div>
+                <div class="info__settings">
+                    <div class="info__points">
+                        <div class="points__first-player">Leonard: 0</div>
+                        <div class="points__second-player">Liza: 0</div>
+                    </div>
+                    <div class="settings">
+                        <img src="img/icon-settings.svg" alt="">
+                        <div class="info__settings-text">
+                            Настройки
+                        </div>
+                    </div>
+                    <div class="settings__body">
+                        <button id="btn-choose-enemy">Сменить противника</button>
+                        <button id='pointsClear'>Начать заново</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+
+    <div class="winner__body">
+        <div class="info__winner">
+            Победил игрок с ником <br><span></span>
+        </div>
+    </div>
+    
+
+
+
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
